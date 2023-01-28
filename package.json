@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "yarn":"1.x",
+    "node": "16.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start-no-deamon": "pm2 start production.config.json --no-daemon",
+    "start-node": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write 'src/**/*.{js,jsx}'",
+    "prettier:check": "prettier --list-"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.2",
+    "is-empty": "^1.2.0",
+    "isset": "^1.0.4",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.28.0",
+    "validator": "^13.7.0"
+  },
+  "description": ""
+}
