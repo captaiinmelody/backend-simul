@@ -6,6 +6,8 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 
 dotenv.config();
+
+
 const app = express();
 
 const port = process.env.PORT || 3000;
@@ -17,9 +19,9 @@ try{
     console.error(e);
 }
 
-app.use(cors({credentials: true,origin: `${port}`}));
+app.use(cors({credentialsorigin: `${port}`}));
 app.use(cookieParser());
 app.use(express.json());
-app.use(router);
+app.use('/auth', router);
 
 app.listen(5000, ()=> console.log(`Server running at ${port}`));

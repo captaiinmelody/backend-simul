@@ -6,6 +6,8 @@ import { createData, getData } from "../controller/AllData.js";
 
 const router = express.Router();
 
+
+
 router.get('/users',verifyToken,getUsers);
 router.get("/token", refreshToken);
 router.get("/links", getData);
